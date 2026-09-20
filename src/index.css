@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Newsreader", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-paper: #F8F7F4;
+  --color-paper-subtle: #F2EFE9;
+  --color-paper-card: #FFFFFF;
+  --color-paper-border: #E5E1D8;
+  --color-paper-border-dark: #D1CBC0;
+
+  --color-ink: #181A1B;
+  --color-ink-muted: #555C66;
+  --color-ink-faint: #87909C;
+
+  --color-cadmium: #C04A2A;
+  --color-cadmium-dark: #9F361B;
+  --color-cadmium-light: #F9EFEB;
+
+  --color-petrol: #1C444E;
+  --color-petrol-light: #ECF3F5;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+  }
+}
+
+.lab-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(212, 206, 192, 0.35) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(212, 206, 192, 0.35) 1px, transparent 1px);
+}
+
+.lab-grid-dense {
+  background-size: 16px 16px;
+  background-image: 
+    linear-gradient(to right, rgba(212, 206, 192, 0.4) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(212, 206, 192, 0.4) 1px, transparent 1px);
+}
+
+.lab-dots {
+  background-size: 20px 20px;
+  background-image: radial-gradient(rgba(180, 172, 156, 0.45) 1px, transparent 1px);
+}
